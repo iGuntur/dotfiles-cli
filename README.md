@@ -1,11 +1,22 @@
 # Dotfiles CLI
 
-### Install
+### Clone
 
 ``` bash
-$ npm install iGuntur/dotfiles-cli
+$ git clone https://github.com/iGuntur/dotfiles-cli.git
 ```
 
+### Install Dependencies
+
+``` bash
+$ npm install
+```
+
+### Make link
+
+``` bash
+$ npm link
+```
 
 ### Usage
 
@@ -13,7 +24,7 @@ $ npm install iGuntur/dotfiles-cli
 $ dotfiles [options]
 ```
 
-### CLI options
+### CLI options [PLAN]
 
 - init:    create "dotfiles.json" file in "current_directorie" working (pwd)
 - install: create symlinks from ".dotfiles" PATH
