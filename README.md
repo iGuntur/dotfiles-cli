@@ -4,6 +4,7 @@
 
 ``` bash
 $ git clone https://github.com/iGuntur/dotfiles-cli.git
+$ cd dotfiles-cli
 ```
 
 ### Install Dependencies
