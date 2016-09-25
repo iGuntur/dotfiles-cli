@@ -19,6 +19,12 @@ $ npm install
 $ npm link
 ```
 
+or
+
+``` bash
+$ sudo npm link
+```
+
 ### Usage
 
 ``` bash
