@@ -21,7 +21,7 @@ class Config {
      * @return {String}
      */
     pwd() {
-        return p.join(this.homePath, this.excludesPath);
+        return p.join(this.homePath, this.dotfilesPath);
     }
 
     /**
