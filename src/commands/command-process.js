@@ -1,4 +1,5 @@
 import fs from 'fs';
+import p from 'path';
 import { includes } from 'lodash';
 import requireDir from 'require-dir';
 import pathExist from 'path-exists';
