@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+const meow = require('meow');
+const Dotfiles = require('../dist').default;
+
+const cli = meow(`
+    Usage
+      $ dotfiles <command> [--options]
+
+    Commands
+      init                  Initialize dotfiles configuration file
+      install               Setup symlinks
+      update                Update dotfiles
+      uninstall             Unistall or remove symlinks
+      outdated              Check new dotfiles version
+      remove                Remove symlinks and dotfiles PATH
+
+    Options
+      --yes, -y             Skip confirmations
+      --source, -S          Source git repo [url|local]
+      --version, -v         Show dotfiles version
+      --help, -h            Show this messages
+
+    Examples
+      $ dotfiles install
+`, {
+    alias: {
+        i: 'install',
+        y: 'yes',
+        s: 'skip',
+    }
+});
+
+new Dotfiles({
+    command: cli.input[0],
+    flags: cli.flags
+}).run();
