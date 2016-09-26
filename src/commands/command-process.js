@@ -18,14 +18,9 @@ class CommandProcess {
      * @return {Array}
      */
     availableCommands() {
-        let cmd = [];
-        let recipes = requireDir('./recipes');
+        let recipes = requireDir(this.recipes);
 
-        Object.keys(recipes).forEach(
-            name => cmd.push(name)
-        );
-
-        return cmd;
+        return Object.keys(recipes);
     }
 
     /**
