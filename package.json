@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "Dotfiles app manager",
   "scripts": {
-    "test": "ava",
     "build": "babel src --out-dir=dist",
     "prepublish": "npm run build",
-    "watch": "npm run build -- --watch | npm test -- --watch"
+    "test": "xo && ava",
+    "watch": "npm test -- --watch"
   },
   "bin": {
     "dotfiles": "bin/dotfiles"
